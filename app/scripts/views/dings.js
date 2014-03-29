@@ -13,7 +13,7 @@ DingsView = (function(_super) {
 
   DingsView.prototype.model = new DingsModel;
 
-  DingsView.prototype.template = JST['test'];
+  DingsView.prototype.template = JST['dings'];
 
   DingsView.prototype.initialize = function() {
     return this.listenTo(this.model, 'change', this.render);
@@ -28,7 +28,7 @@ DingsView = (function(_super) {
   };
 
   DingsView.prototype.changeVal = function() {
-    return this.model.set('val', 'Martin');
+    return this.model.set('val', 'Friend');
   };
 
   return DingsView;

@@ -3,7 +3,7 @@ class DingsView extends Backbone.View
 
     model: new DingsModel
 
-    template: JST['test']
+    template: JST['dings']
 
     initialize: ->
         @listenTo @model, 'change', @render
@@ -15,4 +15,4 @@ class DingsView extends Backbone.View
         'click p': 'changeVal'
 
     changeVal: ->
-        @model.set 'val', 'Martin'
+        @model.set 'val', 'Friend'
